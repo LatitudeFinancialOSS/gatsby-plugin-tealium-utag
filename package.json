@@ -1,10 +1,11 @@
 {
   "name": "gatsby-plugin-tealium-utag",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gatsby Plugin for inserting Tealium's utag to the page",
   "main": "index.js",
   "peerDependencies": {
-    "gatsby": "^2.0.0"
+    "gatsby": "^2.0.0",
+    "react": "^16.8.0"
   },
   "keywords": [
     "gatsby",

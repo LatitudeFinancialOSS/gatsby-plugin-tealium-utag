@@ -1,3 +1,4 @@
+const React = require("react");
 const { oneLineTrim } = require("common-tags");
 
 export const onRenderBody = (
@@ -13,17 +14,17 @@ export const onRenderBody = (
   if (["dev", "qa", "prod"].includes(env)) {
     if (injectUtagSync) {
       setHeadComponents([
-        <script
-          key="plugin-tealium-utag-sync"
-          src={`https://tags.tiqcdn.com/utag/${account}/${profile}/${env}/utag.sync.js`}
-        />
+        React.createElement("script", {
+          key: "plugin-tealium-utag-sync",
+          src: `https://tags.tiqcdn.com/utag/${account}/${profile}/${env}/utag.sync.js`
+        })
       ]);
     }
 
     setPreBodyComponents([
-      <script
-        key="plugin-tealium-utag"
-        dangerouslySetInnerHTML={{
+      React.createElement("script", {
+        key: "plugin-tealium-utag",
+        dangerouslySetInnerHTML: {
           __html: oneLineTrim`
             ${
               disableInitialTracking
@@ -40,8 +41,8 @@ export const onRenderBody = (
               a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a)
             })();
           `
-        }}
-      />
+        }
+      })
     ]);
   } else {
     throw new Error(
