@@ -1,0 +1,17 @@
+{
+  "name": "gatsby-plugin-tealium-utag",
+  "version": "1.0.0",
+  "description": "Gatsby Plugin for inserting Tealium's utag to the page",
+  "main": "index.js",
+  "peerDependencies": {
+    "gatsby": "^2.0.0"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "tealium",
+    "utag"
+  ],
+  "author": "Misha Moroshko <michael.moroshko@gmail.com>",
+  "license": "MIT"
+}
