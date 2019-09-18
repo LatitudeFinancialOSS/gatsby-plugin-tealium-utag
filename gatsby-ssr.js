@@ -36,8 +36,9 @@ export const onRenderBody = (
             }
             (function(a,b,c,d){
               a='//tags.tiqcdn.com/utag/${account}/${profile}/${env}/utag.js';
-              b=document;c='script';d=b.createElement(c);d.src=a;
-              d.type='text/java'+c;d.async=true;
+              b=document;c='script';d=b.createElement(c);
+              d.onload=function() { b.dispatchEvent(new Event("utag-loaded")); };
+              d.src=a;d.type='text/java'+c;d.async=true;
               a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a)
             })();
           `
