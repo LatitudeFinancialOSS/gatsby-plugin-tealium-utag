@@ -66,3 +66,8 @@ document.addEventListener("utag-loaded", () => {
   console.log("utag is ready:", utag);
 });
 ```
+
+## Related
+
+- [tealium-tracker](https://github.com/moroshko/tealium-tracker) - Easily integrate with [Tealium](https://tealium.com/)
+- [react-event-tracker](https://github.com/moroshko/react-event-tracker) - Easily track events in your React application.
