@@ -14,13 +14,12 @@
     "tealium",
     "utag"
   ],
-  "author": "Misha Moroshko <michael.moroshko@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moroshko/gatsby-plugin-tealium-utag.git"
+    "url": "https://github.com/LatitudeFinancialOSS/gatsby-plugin-tealium-utag.git"
   },
   "bugs": {
-    "url": "https://github.com/moroshko/gatsby-plugin-tealium-utag/issues"
+    "url": "https://github.com/LatitudeFinancialOSS/gatsby-plugin-tealium-utag/issues"
   },
   "license": "MIT"
 }

@@ -21,10 +21,10 @@ module.exports = {
         profile: "YOUR_TEALIUM_PROFILE",
         env: "dev",
         injectUtagSync: true,
-        disableInitialTracking: true
-      }
-    }
-  ]
+        disableInitialTracking: true,
+      },
+    },
+  ],
 };
 ```
 
@@ -69,5 +69,5 @@ document.addEventListener("utag-loaded", () => {
 
 ## Related
 
-- [tealium-tracker](https://github.com/moroshko/tealium-tracker) - Easily integrate with [Tealium](https://tealium.com/)
-- [react-event-tracker](https://github.com/moroshko/react-event-tracker) - Easily track events in your React application.
+- [tealium-tracker](https://github.com/LatitudeFinancialOSS/tealium-tracker) - Easily integrate with [Tealium](https://tealium.com/)
+- [react-event-tracker](https://github.com/LatitudeFinancialOSS/react-event-tracker) - Easily track events in your React application.
